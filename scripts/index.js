@@ -6,7 +6,7 @@ function calcularIMC(){
   let resultado = document.getElementById("resultado");
   
   if(altura != "" && peso !=""){
-    altura = altura * 100 // convertendo centímetros pra metros
+    altura = altura / 100 // convertendo centímetros pra metros
     let imc = (peso / (altura * altura)).toFixed(2);
     let mensagem = ""
     
